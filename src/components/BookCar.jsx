@@ -67,12 +67,15 @@ function BookCar() {
   const openModal = (e) => {
     e.preventDefault();
     const errorMsg = document.querySelector(".error-message");
+    const pickUpLocation = document.getElementById("pickup-location");
+    const dropOffLocation = document.getElementById("dropoff-location");
+    const carType = document.getElementById("cartype");
     if (
-      pickUp === "" ||
-      dropOff === "" ||
+      pickUpLocation.selectedIndex===0 ||
+      dropOffLocation.selectedIndex===0 ||
       pickTime === "" ||
       dropTime === "" ||
-      carType === ""
+      carType.selectedIndex===0
     ) {
       errorMsg.style.display = "flex";
     } else {
@@ -110,9 +113,9 @@ function BookCar() {
     setPickUp(e.target.value);
   };
 
-  const handleDrop = (e) => {
-    setDropOff(e.target.value);
-  };
+  // const handleDrop = (e) => {
+  //   setDropOff(e.target.value);
+  // };
 
   const handlePickTime = (e) => {
     setPickTime(e.target.value);
@@ -182,7 +185,7 @@ function BookCar() {
                     <IconCar className="input-icon" /> &nbsp; Select Your Car
                     Type <b>*</b>
                   </label>
-                  <select value={carType} onChange={handleCar}>
+                  <select id="cartype" name="cartype" >
                     <option>Select your car type</option>
                     <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                     <option value="VW Golf 6">VW Golf 6</option>
@@ -200,7 +203,7 @@ function BookCar() {
                     <IconMapPinFilled className="input-icon" /> &nbsp; Pick-up{" "}
                     <b>*</b>
                   </label>
-                  <select value={pickUp} onChange={handlePick}>
+                  <select id="pickup-location" name="pickup-location" >
                     <option>Select pick up location</option>
                     <option>Belgrade</option>
                     <option>Novi Sad</option>
@@ -215,7 +218,7 @@ function BookCar() {
                     <IconMapPinFilled className="input-icon" /> &nbsp; Drop-of{" "}
                     <b>*</b>
                   </label>
-                  <select value={dropOff} onChange={handleDrop}>
+                  <select id="dropoff-location" name="dropoff-location" >
                     <option>Select drop off location</option>
                     <option>Novi Sad</option>
                     <option>Belgrade</option>
