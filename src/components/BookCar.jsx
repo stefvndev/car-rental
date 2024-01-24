@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import CarAudi from "../images/cars-big/audia1.jpg";
+import CarAudi from "../images/cars-big/Ertiga.png";
 import CarGolf from "../images/cars-big/golf6.jpg";
 import CarToyota from "../images/cars-big/toyotacamry.jpg";
-import CarBmw from "../images/cars-big/bmw320.jpg";
-import CarMercedes from "../images/cars-big/benz.jpg";
+import CarBmw from "../images/cars-big/creta.png";
+import CarMercedes from "../images/cars-big/tata Harrier Dark.png";
 import CarPassat from "../images/cars-big/passatcc.jpg";
 
 function BookCar() {
@@ -97,6 +97,42 @@ function BookCar() {
     doneMsg.style.display = "flex";
   };
 
+// Modifed it to make the API request to your backend server
+  // confirm modal booking
+// const confirmBooking = (e) => {
+//   e.preventDefault();
+//   setModal(!modainl);
+//   const doneMsg = document.querySelector('.booking-done');
+//   doneMsg.style.display = 'flex';
+
+//   // Make API request to send the email
+//   const bookingData = {
+//     carType,
+//     pickUp,
+//     dropOff,
+//     pickTime,
+//     dropTime,
+//     name,
+//     lastName,
+//     phone,
+//     age,
+//     email,
+//     address,
+//     city,
+//     zipcode,
+//   };
+
+//   // Replace 'http://your-backend-api-url' with the actual URL of your backend server
+//   axios.post('http://your-backend-api-url/api/send-email', bookingData)
+//     .then((response) => {
+//       console.log(response.data.message); // Email sent successfully message
+//     })
+//     .catch((error) => {
+//       console.error(error); // Error sending the email
+//     });
+// };
+
+
   // taking value of booking inputs
   const handleCar = (e) => {
     setCarType(e.target.value);
@@ -122,7 +158,7 @@ function BookCar() {
   // based on value name show car img
   let imgUrl;
   switch (carImg) {
-    case "Audi A1 S-Line":
+    case "Maruti Suzuki Ertiga":
       imgUrl = CarAudi;
       break;
     case "VW Golf 6":
@@ -131,10 +167,10 @@ function BookCar() {
     case "Toyota Camry":
       imgUrl = CarToyota;
       break;
-    case "BMW 320 ModernLine":
+    case "Hyundia Creta":
       imgUrl = CarBmw;
       break;
-    case "Mercedes-Benz GLK":
+    case "Tata Harrier":
       imgUrl = CarMercedes;
       break;
     case "VW Passat CC":
@@ -181,13 +217,13 @@ function BookCar() {
                   </label>
                   <select value={carType} onChange={handleCar}>
                     <option>Select your car type</option>
-                    <option value="Audi A1 S-Line">Audi A1 S-Line</option>
+                    <option value="Maruti Suzuki Ertiga">Maruti Suzuki Ertiga</option>
                     <option value="VW Golf 6">VW Golf 6</option>
                     <option value="Toyota Camry">Toyota Camry</option>
-                    <option value="BMW 320 ModernLine">
-                      BMW 320 ModernLine
+                    <option value="Hyundia Creta">
+                      Hyundia Creta
                     </option>
-                    <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
+                    <option value="Tata Harrier">Tata Harrier</option>
                     <option value="VW Passat CC">VW Passat CC</option>
                   </select>
                 </div>
@@ -199,11 +235,11 @@ function BookCar() {
                   </label>
                   <select value={pickUp} onChange={handlePick}>
                     <option>Select pick up location</option>
-                    <option>Belgrade</option>
-                    <option>Novi Sad</option>
-                    <option>Nis</option>
-                    <option>Kragujevac</option>
-                    <option>Subotica</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nashik</option>
+                    <option>Banglore</option>
+                    <option>Kolkata</option>
                   </select>
                 </div>
 
@@ -214,11 +250,11 @@ function BookCar() {
                   </label>
                   <select value={dropOff} onChange={handleDrop}>
                     <option>Select drop off location</option>
-                    <option>Novi Sad</option>
-                    <option>Belgrade</option>
-                    <option>Nis</option>
-                    <option>Kragujevac</option>
-                    <option>Subotica</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nashik</option>
+                    <option>Banglore</option>
+                    <option>Kolkata</option>
                   </select>
                 </div>
 

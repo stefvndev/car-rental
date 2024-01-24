@@ -23,7 +23,7 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
+            <li>  
               <Link onClick={openNav} to="/about">
                 About
               </Link>
@@ -97,10 +97,10 @@ function Navbar() {
             </li>
           </ul>
           <div className="navbar__buttons">
-            <Link className="navbar__buttons__sign-in" to="/">
+            <Link className="navbar__buttons__sign-in" to="/SignupAndRegisterPage.jsx">
               Sign In
             </Link>
-            <Link className="navbar__buttons__register" to="/">
+            <Link className="navbar__buttons__register" to="/SignupAndRegisterPage.jsx">
               Register
             </Link>
           </div>

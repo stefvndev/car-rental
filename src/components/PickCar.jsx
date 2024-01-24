@@ -37,7 +37,7 @@ function PickCar() {
                     btnID("btn1");
                   }}
                 >
-                  Audi A1 S-Line
+                  Maruti Suzuki Ertiga
                 </button>
                 <button
                   className={`${coloringButton("btn2")}`}
@@ -67,7 +67,7 @@ function PickCar() {
                     btnID("btn4");
                   }}
                 >
-                  BMW 320 ModernLine
+                  Hyundai Creta
                 </button>
                 <button
                   className={`${coloringButton("btn5")}`}
@@ -77,7 +77,7 @@ function PickCar() {
                     btnID("btn5");
                   }}
                 >
-                  Mercedes-Benz GLK
+                  Tata Harrier
                 </button>
                 <button
                   className={`${coloringButton("btn6")}`}

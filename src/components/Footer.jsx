@@ -13,8 +13,8 @@ function Footer() {
                 have the perfect car to meet your needs.
               </li>
               <li>
-                <a href="tel:123456789">
-                  <i className="fa-solid fa-phone"></i> &nbsp; (123) -456-789
+                <a href="tel:9405605217">
+                  <i className="fa-solid fa-phone"></i> &nbsp; (+91) 9405605217
                 </a>
               </li>
 
@@ -24,7 +24,7 @@ function Footer() {
                 carrental@gmail.com"
                 >
                   <i className="fa-solid fa-envelope"></i>
-                  &nbsp; carrental@gmail.com
+                  &nbsp; vijayindalkar11@gmail.com
                 </a>
               </li>
 
@@ -33,9 +33,9 @@ function Footer() {
                   style={{ fontSize: "14px" }}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://xpeedstudio.com/"
+                  href="https://indalkar.com/"
                 >
-                  Design by XpeedStudio
+                  Visit Indalkar.com
                 </a>
               </li>
             </ul>
@@ -43,7 +43,7 @@ function Footer() {
             <ul className="footer-content__2">
               <li>Company</li>
               <li>
-                <a href="#home">New York</a>
+                <a href="#home">Pune</a>
               </li>
               <li>
                 <a href="#home">Careers</a>
@@ -62,7 +62,7 @@ function Footer() {
             <ul className="footer-content__2">
               <li>Working Hours</li>
               <li>Mon - Fri: 9:00AM - 9:00PM</li>
-              <li>Sat: 9:00AM - 19:00PM</li>
+              <li>Sat: 9:00AM - 9:00PM</li>
               <li>Sun: Closed</li>
             </ul>
 

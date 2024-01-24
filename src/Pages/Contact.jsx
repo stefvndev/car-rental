@@ -1,5 +1,7 @@
+
 import Footer from "../components/Footer";
-import HeroPages from "../components/HeroPages";
+import HeroPages from "../components/HeroPages";  
+
 
 function Contact() {
   return (
@@ -15,38 +17,142 @@ function Contact() {
                 research, development as well as a learning specialist. Over 15
                 years of experience.
               </p>
-              <a href="/">
-                <i className="fa-solid fa-phone"></i>&nbsp; (123) 456-7869
+              <a href="tel:9405605217">
+                <i className="fa-solid fa-phone"></i>&nbsp; (+91) 9405605217
               </a>
-              <a href="/">
+              <a href="mailto:vijayIndalkar@gmail.com">
                 <i className="fa-solid fa-envelope"></i>&nbsp;
-                carrental@carmail.com
+                vijayIndalkar@gmail.com
               </a>
               <a href="/">
-                <i className="fa-solid fa-location-dot"></i>&nbsp; Belgrade,
-                Serbia
+                <i className="fa-solid fa-location-dot"></i>&nbsp; Pune,Maharashtra 
               </a>
             </div>
             <div className="contact-div__form">
-              <form>
+              <form action="src\Pages\databasephp.php" id="contactForm" method="POST">
                 <label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   Full Name <b>*</b>
                 </label>
-                <input type="text" placeholder='E.g: "Joe Shmoe"'></input>
+                <input type="text" id="name" placeholder='E.g: "Baba Yaga"'></input>
 
                 <label>
-                  Email <b>*</b>
+                  Email <b>*</b>  
                 </label>
-                <input type="email" placeholder="youremail@example.com"></input>
+                <input type="email" id="emailid" placeholder="babayaga@example.com"></input>
 
                 <label>
                   Tell us about it <b>*</b>
                 </label>
-                <textarea placeholder="Write Here.."></textarea>
+                <textarea id="msgContent" placeholder="Write Here.."></textarea>
 
                 <button type="submit">
                   <i className="fa-solid fa-envelope-open-text"></i>&nbsp; Send
-                  Message
+                  Message 
                 </button>
               </form>
             </div>
@@ -59,11 +165,11 @@ function Contact() {
               <h2>Book a car by getting in touch with us</h2>
               <span>
                 <i className="fa-solid fa-phone"></i>
-                <h3>(123) 456-7869</h3>
+                <h3>(+91) 9405605217</h3>
               </span>
             </div>
           </div>
-        </div>
+        </div>;
         <Footer />
       </section>
     </>
